@@ -1,0 +1,295 @@
+@media only screen and (max-width:320px)
+{
+html, body {font-size: 12px;  line-height: 18px;}
+
+html    {max-width:100%}
+
+body	{max-width: 95%; box-padding: 2%;}
+
+header	{max-width: 100%; margin-bottom: 2%;  padding-bottom: 2%;}
+
+footer	{font-size: 10px; width: 90%; text-shadow: none; word-spacing: 1px;}
+
+footer a {padding: 0;}
+
+h1	{font-size: 150%; padding-top: 5%; text-align: center; line-height: 1.5;}
+
+h2	{font-size: 100%;} 
+
+h3, h4 {font-size: 85%;}
+
+h4	{margin: 2px 0}
+
+p {font-size: 80%}
+
+section {margin-left: 2.5%; margin-right: 2.5%; width: 95%; height: 10%; border: none;}
+
+label	{font-size: 100%; word-break: keep-all }
+
+textarea {font-size: 100%;}
+
+img	{width: 100%; height: auto;}
+
+.form	{max-width: 100%; margin: 0 auto; border: 1px solid #FFFFFF;}
+
+.snav-sidenav {width: 90%; height: 100%}
+
+.snav-container {padding: 0 0;}
+
+.snav-sidenav a {line-height: 2; padding: 1px 0px 1px 6px;}
+
+.logo	{width: 25%; height: auto}
+
+.header	{display: flex-box; display: -webkit-flex-box}
+
+.header-image{height: auto; width: 60%;}
+
+.topic-image {height: auto; width: 30%;}
+
+.sitemap-image {height: auto; width: 20%;}
+
+.footer-image {height: auto; width: 20%; display: inline;}
+
+.header-image, .topic-image{margin: 5%;}
+
+.sprites-image {margin: 5%;}
+
+.codes {width: 80%; margin-left: 10%; margin-right: 10%}
+
+#codelist {padding-right: 15%;}
+
+img:hover{border-color: white;}
+
+}
+
+
+
+@media only screen and (min-width:321px) and (max-width:420px)
+{
+html, body {font-size: 12px;  line-height: 18px;}
+
+html    {max-width:100%}
+
+body	{max-width: 95%; box-padding: 2%;}
+
+header	{max-width: 100%; margin-bottom: 2%;  padding-bottom: 2%;}
+
+footer	{font-size: 10px; width: 90%; text-shadow: none; word-spacing: 1px;}
+
+footer a {padding: 0;}
+
+h1	{font-size: 150%; padding-top: 5%; text-align: center; line-height: 1.5;}
+
+h2	{font-size: 100%;} 
+
+h3, h4 {font-size: 85%;}
+
+h4	{margin: 2px 0}
+
+p {font-size: 80%}
+
+section {margin-left: 2.5%; margin-right: 2.5%; width: 95%; height: 10%; border: none;}
+
+label	{font-size: 100%; word-break: keep-all }
+
+textarea {font-size: 100%;}
+
+img	{width: 100%; height: auto;}
+
+.form	{max-width: 100%; margin: 0 auto; border: 1px solid #FFFFFF;}
+
+.snav-sidenav {width: 90%; height: 100%}
+
+.snav-container {padding: 0 0;}
+
+.snav-sidenav a {line-height: 2; padding: 1px 0px 1px 6px;}
+
+.logo	{width: 25%; height: auto}
+
+.header	{display: flex-box; display: -webkit-flex-box}
+
+.header-image{height: auto; width: 60%;}
+
+.topic-image {height: auto; width: 30%;}
+
+.sitemap-image {height: auto; width: 20%;}
+
+.footer-image {height: auto; width: 20%; display: inline;}
+
+.header-image, .topic-image{margin: 5%;}
+
+.sprites-image {margin: 5%;}
+
+.codes {width: 80%; margin-left: 10%; margin-right: 10%}
+
+#codelist {padding-right: 15%;}
+
+img:hover{border-color: white;}
+
+}
+
+
+@media only screen and (min-width:421px) and (max-width:767px)
+{
+html, body {font-size: 12px;  line-height: 18px;}
+
+html    {max-width:100%}
+
+body	{max-width: 95%; box-padding: 2%;}
+
+header	{max-width: 100%; margin-bottom: 2%;  padding-bottom: 2%;}
+
+footer	{font-size: 10px; width: 90%; text-shadow: none; word-spacing: 1px;}
+
+footer a {padding: 0;}
+
+h1	{font-size: 150%; padding-top: 5%; text-align: center; line-height: 1.5;}
+
+h2	{font-size: 100%;} 
+
+h3, h4 {font-size: 85%;}
+
+h4	{margin: 2px 0}
+
+p {font-size: 80%}
+
+section {margin-left: 2.5%; margin-right: 2.5%; width: 95%; height: 10%; border: none;}
+
+label	{font-size: 100%; word-break: keep-all }
+
+textarea {font-size: 100%;}
+
+img	{width: 100%; height: auto;}
+
+.form	{max-width: 100%; margin: 0 auto; border: 1px solid #FFFFFF;}
+
+.snav-sidenav {width: 90%; height: 100%}
+
+.snav-container {padding: 0 0;}
+
+.snav-sidenav a {line-height: 2; padding: 1px 0px 1px 6px;}
+
+.logo	{width: 25%; height: auto}
+
+.header	{display: flex-box; display: -webkit-flex-box}
+
+.header-image{height: auto; width: 60%;}
+
+.topic-image {height: auto; width: 30%;}
+
+.sitemap-image {height: auto; width: 20%;}
+
+.footer-image {height: auto; width: 20%; display: inline;}
+
+.header-image, .topic-image{margin: 5%;}
+
+.sprites-image {margin: 5%;}
+
+.codes {width: 80%; margin-left: 10%; margin-right: 10%}
+
+#codelist {padding-right: 15%;}
+
+img:hover{border-color: white;}
+
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1023px)
+{
+html    {max-width:100%}
+
+body	{max-width: 100%; box-padding: 2%;}
+
+header	{max-width: 100%; margin-bottom: 2%;  padding-bottom: 2%;}
+
+iframe, object {width: 90%; height: 40%;}
+
+section {margin-left: 40%; width: 60%; height: auto}
+
+.snav-sidenav {width: 40%; height: 100%}
+
+}
+
+
+@media only screen and (min-width:1024px) and (max-width:1279px)
+{
+html    {max-width:100%}
+
+body	{max-width: 100%; box-padding: 2%;}
+
+header	{max-width: 100%; margin-bottom: 2%;  padding-bottom: 2%;}
+
+iframe, object {width: 90%; height: 40%;}
+
+section {margin-left: 40%; width: 60%; height: auto}
+
+.snav-sidenav {width: 40%; height: 100%}
+
+}
+
+
+
+@media only screen and (min-width:1280px) and (max-width:1359px)
+{
+html, body {font-size: 12px;  line-height: 18px;}
+
+html    {max-width:100%}
+
+body	{max-width: 100%; box-padding: 2%;}
+
+header	{max-width: 100%; margin-bottom: 2%;  padding-bottom: 2%;}
+
+footer	{font-size: 10px; width: 90%; text-shadow: none; word-spacing: 1px;}
+
+footer a {padding: 0;}
+
+h1	{font-size: 150%; padding-top: 5%; text-align: center; line-height: 1.5;}
+
+h2	{font-size: 100%;} 
+
+h3, h4 {font-size: 85%;}
+
+h4	{margin: 2px 0}
+
+p {font-size: 80%}
+
+section {margin-left: 2.5%; margin-right: 2.5%; width: 95%; height: 10%; border: none;}
+
+label	{font-size: 100%; word-break: keep-all }
+
+textarea {font-size: 100%;}
+
+img	{width: 100%; height: auto;}
+
+.form	{max-width: 100%; margin: 0 auto; border: 1px solid #FFFFFF;}
+
+.snav-sidenav {width: 90%; height: 100%}
+
+.snav-container {padding: 0 0;}
+
+.snav-sidenav a {line-height: 2; padding: 1px 0px 1px 6px;}
+
+.logo	{width: 25%; height: auto}
+
+.header	{display: flex-box; display: -webkit-flex-box}
+
+.header-image{height: auto; width: 60%;}
+
+.topic-image {height: auto; width: 30%;}
+
+.sitemap-image {height: auto; width: 20%;}
+
+.footer-image {height: auto; width: 20%; display: inline;}
+
+.header-image, .topic-image{margin: 5%;}
+
+.sprites-image {margin: 5%;}
+
+.codes {width: 80%; margin-left: 10%; margin-right: 10%}
+
+#codelist {padding-right: 15%;}
+
+img:hover{border-color: white;}
+
+}
+

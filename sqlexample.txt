@@ -1,0 +1,92 @@
+
+/* // CREATING venues TABLE // */
+CREATE TABLE clients
+(
+client_id int NOT NULL,
+first_name varchar(15) NOT NULL,
+last_name varchar(20) NOT NULL,
+phone number(10) NOT NULL,
+email varchar(50),
+CONSTRAINT pk_client_id PRIMARY KEY(client_id)
+);
+
+
+INSERT INTO clients (client_id, first_name, last_name, phone, email)
+VALUES (1, 'Hiram','Peters', 5555551111, 'hpeters@yahoo.com');
+
+INSERT INTO clients (client_id, first_name, last_name, phone, email)
+VALUES (2, 'Serena','Jones', 5555552222, 'sjones@aol.com');
+
+INSERT INTO clients (client_id, first_name, last_name, phone, email)
+VALUES (3, 'Lauren','Roberts', 5555553333, '');
+
+INSERT INTO clients (client_id, first_name, last_name, phone, email)
+VALUES (4, 'Charles','Shields', 5555554444, 'cshields@tmcmed.org');
+
+SELECT * FROM clients;
+
+/* // CREATING venues TABLE // */
+CREATE TABLE venues
+(
+id int NOT NULL,
+loc_type varchar(20) NOT NULL,
+address varchar(50) NOT NULL,
+hourly_rental_fee number(5) NOT NULL,
+comments varchar(75),
+CONSTRAINT pk_venue PRIMARY KEY(id)
+);
+
+INSERT INTO venues (id, loc_type, address, hourly_rental_fee, comments)
+VALUES (10, 'Private Home', '52 W. End Drive Los Angeles, CA 902100', 0, 'Large kitches, spacious lawn');
+
+INSERT INTO venues (id, loc_type, address, hourly_rental_fee, comments)
+VALUES (22, 'Four Season Hotel', '200 Pennsylvania Ave Washington D.C. 09002', 75, 'classy affair, tight security, private entrance for vendors');
+
+INSERT INTO venues (id, loc_type, address, hourly_rental_fee, comments)
+VALUES (23, 'Ritz Hotel', '2301 Holmes St. Kansas City, MO 64108', 65, 'formal affair, tight security, private entrance for vendors');
+
+SELECT * FROM venues;
+
+/* // CREATING venues TABLE // */
+CREATE TABLE events
+(
+id int NOT NULL,
+name varchar(25) NOT NULL,
+event_date DATE NOT NULL,
+description varchar(50) NOT NULL,
+cost number(10),
+venue_id int,
+client_id int NOT NULL,
+CONSTRAINT pk_event_id PRIMARY KEY(id),
+CONSTRAINT fk_client FOREIGN KEY (client_id) REFERENCES clients(client_id),
+CONSTRAINT fk_venue FOREIGN KEY (venue_id) REFERENCES venues(id)
+);
+
+INSERT INTO events (id, name, event_date, description, cost, venue_id, client_id)
+VALUES (100, 'Peters Graduation', '14-May-2019', 'Party for 200, red, white, blue motif', 8000, 10, 1);
+
+INSERT INTO events (id, name, event_date, description, cost, venue_id, client_id)
+VALUES (101, 'Roberts''s''wedding', '28-Oct-2020', 'Black tie at Four Season Hotel', 15000, 22, 3);
+
+INSERT INTO events (id, name, event_date, description, cost, venue_id, client_id)
+VALUES (102, 'TMC Employee Appreciation', '24-Dec-2020', 'Employee Appreciation at Ritz Hotel', 10000, 23, 4);
+
+
+SELECT * FROM events;
+
+
+/* // QUERIES TO TRY // */
+
+SELECT * FROM clients;
+SELECT * FROM events;
+SELECT * FROM venues;
+
+
+SELECT c.last_name||', ' ||c.first_name "Client Name", c.phone "Contact #", e.event_date, e.cost
+FROM clients c, events e
+WHERE c.client_id = e.client_id;
+
+
+SELECT c.last_name||', ' ||c.first_name "Client Name", c.phone "Contact #", e.event_date, e.cost, v.loc_type "Location", v.address, v.comments
+FROM clients c, events e, venues v
+WHERE c.client_id = e.client_id AND v.id = e.venue_id;

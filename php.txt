@@ -1,0 +1,54 @@
+<?php
+// define variables and set to empty values
+$firstErr = $lastErr = "";
+$first = $last = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["fname"])) {
+    $firstErr = "First name is required";
+  } else {
+    $first = test_input($_POST["fname"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$first)) {
+      $firstErr = "Only letters and white space allowed"; 
+    }
+  }
+  
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["lname"])) {
+    $lastErr = "Last name is required";
+  } else {
+    $last = test_input($_POST["lname"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$last)) {
+      $lastErr = "Only letters and white space allowed"; 
+    }
+  }
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+<p><span class="error">* required field</span></p>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  First Name: <input type="text" name="fname" value="<?php echo $first;?>">
+  <span class="error">* <?php echo $firstErr;?></span>
+  <br><br>
+  Last Name : <input type="text" name="lname" value="<?php echo $last;?>">
+  <span class="error">* <?php echo $lastErr;?></span>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
+
+<?php
+echo "<h2>Your Input Was:</h2>";
+echo $first;
+echo "<br>";
+echo $last;
+echo "<br>";
+
+?>

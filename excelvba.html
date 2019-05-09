@@ -1,0 +1,206 @@
+<DOCTYPE! html>
+<html lang="en">
+
+
+</html>
+
+ <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Sharkey's Software Development Portfolio">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale= 1.0, user-scalable= 0,"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="portfolio, software developer, C++, Java, JavaScript, PHP, SQL" />
+		
+        <title>Chris Sharkey's Software Development Portfolio: Excel VBA Page </title>
+        
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="sidenav2.css">
+        <link rel="stylesheet" href="responsive.css">
+    
+ </head>
+ 
+<body>
+
+	<header id="header">
+	
+		<nav class="snav-sidenav snav-white snav-animate-left" style="display:none; z-index:5; position:fixed; text-shadow:none;" id="mySidenav">
+			<h4><a href="javascript:void(0)" onclick="snav_close()" class="snav-closenav snav-large" style="color:red;">Close ×</a></h4>
+				<a href="index.html" target="_self">Home</a>
+				<a href="cplusplus.html" target="_self">C++ Project</a>
+				<a href="java.html" target="_self">Java Project</a>
+				<a href="javascript.html">JavaScript Project</a>
+				<a href="php.html" target="_self">PHP Project</a>
+			<!-- 	<a href="sql.html" target="_self">SQL Project</a> -->
+				<a href="excelvba.html" target="_self">VBA Project</a>
+
+		</nav>
+
+		<div class="snav-overlay snav-animate-opacity" onclick="snav_close()" style="cursor:pointer" id="myOverlay"></div>
+
+		<div class="snav-container">
+		<span class="snav-opennav snav-xxlarge" onclick="snav_open()" style="position: fixed;">☰</span>
+
+		<div class="header">
+			<h1>Chris Sharkey's Software Development Portfolio</h1>
+		</div> 
+		
+	</header>
+  
+	 
+     
+<script>
+function snav_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function snav_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+    
+            
+    <main class="container">
+    
+        <div>
+        <center><h2>VBA Project</h2></center>
+        
+           <br>
+		<h2>A Little Background</h2>
+
+            <p> 
+			For the purpose of showcasing my versatility, I have decided to include a real-life project that I created for my employer.  I created a Microsoft Excel form/document
+			that includes VBA coding.  Before I get to explaining the form and how it works, I wanted to mention that I have never taken any advanced Excel courses, nor did anyone help
+			me with this project.  I created this 'smart' document using what I learned from my software development classes and a little Microsoft language research.  
+			</p>
+			<p>
+			<p>
+			For years, we have been trying to get Cerner to create an electronic alert form that clinics can use to streamline the process, however we kept on getting
+			the same response "This is not possible".  One thing I have learned, when it comes to programming/coding, is that anything is possible as long as you are 
+			willing to code it. In response, and after learning the basics of programming/coding, I decided to take on the task of creating this project.
+			</p>
+
+			This project was created in an effort to address some issues we were having in our department. The department I work for is the Operating Room at Truman Medical Center West.
+			I will first start by explaining how the process use to work, before the implementation of this electronic surgery alert/reservation form I created,
+			so as you can have a better understanding of how this project truly impacted the process.  Then I will point out issues with the process and how it impacted the OR (operating room) on the day of surgery. 
+			</p>
+			<p>
+			Once it was determined that a patient seen in clinic needed surgery, the following process took place: 
+			<ol>
+				<li>Staff doctor or resident would partially fill out the paper alert form</li>
+				<li>They would walk it over to their nurse clinician</li>
+				<li>The nurse clinician would then fill out the remaining information such as:</li>
+					<ul>
+						<li>Diagnosis Code</li>
+						<li>Procedure to be performed (information given to her by doctor/resident)</li></li>
+						<li>Diagnosis code(s)</li
+						<li>Rest of the patient information (such as date of birth, medical record number, phone number ...)</li>
+						<li>CPT 4 code</li>
+						<li>Pre-Anesthesia and post-op visit information</li>
+					</ul>
+				<li>The nurse clinician would then have to walk over to fax machine and fax document to 'right fax' number and wait for the confirmation</li>
+				<li>The nurse would have to save a copy to archive</li>
+			    <li>Finally, the nurse clinician would have to either make a copy of the alert and walk or fax it to the utilization specialist (finance department) to get prior authorization for surgery</li>
+			</ol>
+			The alert, once faxed, would come to a special email address designated to 'right fax' from which we, the OR schedules, would be able to print and then schedule the case.
+			</p>
+			
+			<p>
+			Some of the issues with this process are pretty obvious.  Mainly how inefficient it truly was.  However, there were several issues that greatly impacted us in the OR as well.
+			The biggest issues were:
+			<ul>
+				<li>Since alerts were hand written, they were hard to read and therefore causing issues scheduling case correctly</li>
+				<li>When cases were scheduled incorrectly, on the day of surgery, it was causing delays</li>
+				<li>These delays greatly impacted the OR utilization and patient satisfaction</li>			
+			</ul>
+			</p>
+			
+			<p>
+			With the implementation of the electronic alert form, the new process is:
+			<li>Staff doctor or resident will fill out most of the paper alert form (as now they are accountable for what is on it)</li>
+				<li>They can now email the form to their nurse clinician (in the excel format)</li>
+				<li>The nurse clinician will fill out the remaining information such as:</li>
+					<ul>
+						<li>Diagnosis Code</li>
+						<li>Pre-Anesthesia and post-op visit information</li>
+					</ul>
+				<li>The nurse clinician will then click the "Submit To OR" button to send it to the OR email, utilization specialists, and pre-anesthesia nurses</li>
+			</ol>
+			As you can see it did not drastically change the process, but it did streamline it because now:
+			<ul>
+				<li>The doctors/residents can send the alert to their nurse from where they are in the hospital (as they can download from the intranet)</li>
+				<li>This in turn generates a copy of what they sent to the nurse in their sent fold and in the nurses </li>
+				<li>The nurses can now get the alert no matter where they are at and fill out the rest of the information</li>
+				<li>The nurses no longer has to look for a fax machine as they can send to the OR and utilization specialists directly from their desks (generating an electronic copy easier to archive)</li>
+			</ul>
+			For us in the OR it also dramatically impacted not only our utilization, but our ability to schedule cases.  Now:
+			<ul>
+				<li>The alert forms are easy to read.</li>
+				<li>There are no issues selecting the correct preference card(s), as the doctor/resident have already indicated which one they want</li>
+				<li>Thus, reducing case delays for not having the correct equipment while increasing patient satisfaction</li>
+			</ul>			
+			</p>
+			
+       <h2>Project Description</h2>
+        	
+
+			<p>
+			The following are key features of the form that have made it be so successful:
+			<ul>
+				<li>Forces all text to all caps (makes it easier to read)</li>
+				<li>Since not all the doctors perform the same procedures (i.e. Orthopedics, General Surgery), some fields are dependent on each other.  For example:</li>
+				<ul>
+					<li>'Preference Card' field is dependent on the 'Primary Surgeon' field</li>
+					<li>'CPT 4' field is dependent on the 'Preference Card' field (as it generates the CPT 4 code for the procedure, unless code depends on specific location or doctor requested not to have CPT code generate)</li>
+					<li>2nd 'Encounter Type' field depends on 1st 'Encounter Type' field (2nd Encounter Type field is only available if 'AM Admit' is selected in field 1</li>
+				</ul>
+				<li>Date field automatically updates the drop down list dates (today - 6 months out)</li>
+				<li>The completed/submitted time on the bottom of the alert is timestamped with the current system date and time (and auto updates as you complete the alert)</li>
+				<li>Once the submit button is clicked:</li>
+					<ul>
+					<li>Form checks to make sure that all required fields filled in, if not it will show an alert indicating which field is missing.</li>
+					<li>Form checks to make sure Outlook app is open</li>
+					<li>If no errors are detected, it will create a PDF copy of the form, open the PDF for nurse to view.</li>
+					<li>Then generate a Outlook message with everyone who needs the alert form in the To and CC fields, and attach the PDF form to the email to be sent</li>
+					</ul>
+				<li>Once form is submitted to the OR, the OR email will automatically respond with a confirmation email indicating that alert has been received</li>
+			</ul>
+			Note: The reason the form is converted to PDF is to avoid it from being altered by anyone else once the form is submitted.
+			</p>
+			
+			<p>
+			You are more than welcome to fill out the form to test it and click the "send to me" button as I have made modifications for the purpose of this portfolio and it will
+			only send it to my email address.  I also encourage you to try to leave some required fields (the ones with *) to see the alert and also to try to send it without Outlook 
+			open to see the message it generates.  All fields that are that have a light blue border have a drop-down list or you can free text and all fields with an orange border
+			you can only select from the drop-down list.  Some boxes also have a message/comment to assist in filling out the form.
+			</p>
+        
+		</div>
+		
+		<div>
+        <h2>VBA Example:</h2> 
+		<br>
+		<div>
+
+		
+		<center><a href="OR_Surgery AlertForm Example.xlsm" alt="Excel Document Download Link" download><img src="excelvba.png" alt="VBA" style="width:10%; height:auto;"></a></center>
+		
+
+        <br><br>
+        <div Style="text-align:right">
+		NEXT:
+		<a href="end.html" target="_self" alt="Thank You!"><img src="finish.png" alt="Finish" border="5" style="width:15%; height:auto;"> </a>
+
+		</div>
+    </main>
+    
+
+    </body>
+	
+    <footer>
+        <center>
+		<a href="#header"> Back To Top </a>
+        </center>
+    </footer>
+		
+</html>

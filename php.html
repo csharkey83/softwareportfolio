@@ -1,0 +1,127 @@
+<DOCTYPE! html>
+<html lang="en">
+
+
+</html>
+
+ <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Sharkey's Software Development Portfolio">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale= 1.0, user-scalable= 0,"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="portfolio, software developer, C++, Java, JavaScript, PHP, SQL" />
+		
+        <title>Chris Sharkey's Software Development Portfolio: PHP Page </title>
+        
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="sidenav2.css">
+        <link rel="stylesheet" href="responsive.css">
+		
+		<style>
+		.error {color: red;}
+	    </style>
+    
+ </head>
+ 
+<body>
+
+	<header id="header">
+	
+		<nav class="snav-sidenav snav-white snav-animate-left" style="display:none; z-index:5; position:fixed; text-shadow:none;" id="mySidenav">
+			<h4><a href="javascript:void(0)" onclick="snav_close()" class="snav-closenav snav-large" style="color:red;">Close ×</a></h4>
+				<a href="index.html" target="_self">Home</a>
+				<a href="cplusplus.html" target="_self">C++ Project</a>
+				<a href="java.html" target="_self">Java Project</a>
+				<a href="javascript.html">JavaScript Project</a>
+				<!-- <a href="php.html" target="_self">PHP Project</a> -->
+				<a href="sql.html" target="_self">SQL Project</a>
+				<a href="excelvba.html" target="_self">VBA Project</a>
+
+		</nav>
+
+		<div class="snav-overlay snav-animate-opacity" onclick="snav_close()" style="cursor:pointer" id="myOverlay"></div>
+
+		<div class="snav-container">
+		<span class="snav-opennav snav-xxlarge" onclick="snav_open()" style="position: fixed;">☰</span>
+
+		<div class="header">
+			<h1>Chris Sharkey's Software Development Portfolio</h1>
+		</div> 
+		
+	</header>
+  
+	 
+     
+<script>
+function snav_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function snav_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+    
+            
+    <main class="container">
+    
+        <div>
+        <center><h2>PHP Project</h2></center>
+        
+           <br>
+			
+       <h2>Project Description</h2>
+        
+			<p>
+			 I have not really had too much experience with PHP, since I do not have a PHP server/compiler that I can use, however, to showcase my versatility and 
+			 ability to learn something new quickly, I have decided to create the form below which would (if on a PHP server) allow you to send me an email message.  
+			 Go ahead and add your information and click "Submit".
+
+        
+		</div>
+		
+		<div>
+        <h2>PHP Example:</h2>
+
+			
+			<div>
+			
+			<center><h3>Contact Me:</h3></center>
+			<center><form action="form_submit.php" method="post">
+				<input name="name" type="text" placeholder="Your Name" style="width: 500px; font-size: 18px; color: white; background:transparent;" required><br>
+				<input name="email" type="text" placeholder="Your Email" style="width: 500px; font-size: 18px; color: white; background:transparent;" required><br>
+				<input name="subject" type="text" placeholder="Enter Subject" style="width: 500px; font-size: 18px; color: white; background:transparent;" required><br><br>
+				<textarea name="message" type="text" placeholder="Your Message" style="width: 500px; font-size: 18px; color: white;background:transparent; height: 250px;"  row ="4" required></textarea>
+				<br>
+				<a href="https://onlinegdb.com/ByF7ELAo4" target="_blank" alt="submit"onclick="submitForm()"><h5>Submit</h5></a>
+				<!-- <input type="submit" value="SEND MESSAGE" onclick="myFunction()"> -->
+			</form></center>
+			</div>
+<!-- I was thinking about using this function below, but then thought against it as it would require you to copy and paste into web browser -->			
+			<script>
+			function submitForm() 
+			{
+			 alert("If on a PHP server an email would be sent to me with the your information and message, however, since not on a PHP server I have linked 'submit' to generate this message.  Once you click 'ok' you will be redirected to a page to view the PHP code that would be executed to send the message in the form. ");
+			}
+			</script>
+        </div>
+        
+        <br><br>
+        <div Style="text-align:right">
+		NEXT:
+		<a href="sql.html" target="_self" alt="SQL Example Link"><h5>SQL</h5></a>
+
+		</div>
+    </main>
+    
+
+    </body>
+	
+    <footer>
+        <center>
+		<a href="#header"> Back To Top </a>
+        </center>
+    </footer>
+		
+</html>
